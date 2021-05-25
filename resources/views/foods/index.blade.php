@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Food Section</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div class="container">
-
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{route('foods.index')}}">Food Section</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="{{ URL::to('foods') }}">View Menu</a></li>
-                <li><a href="{{route('foods.create')}}">Add Food</a>
-            </ul>
-        </nav>
+@include('foods.navigation')
 
         <h1>All the foods</h1>
 
@@ -30,35 +11,35 @@
         <div class="alert alert-info">{{ Session::get('message') }}</div>
         @endif
 
-        <table class="table table-striped table-bordered">
+        <table class="table table-bordered">
             <thead>
                 <tr>
-                    <td>Id</td>
-                    <td>Name</td>
-                    <td>Price</td>
-                    <td>Category</td>
-                    <td>Description</td>
-                    <td>Photo</td>
-                    <th width="280px">Action</th>
+                    <th width="20px" class="text-center">No</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Category</th>
+                    <th class="text-center">Description</th>
+                    <th class="text-center">Photo</th>
+                    <th width="280px" class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($foods as $key => $value)
                 <tr>
-                    <td>{{ $value->id }}</td>
+                    <td class="text-center">{{ ++$i }}</td>
                     <td>{{ $value->name }}</td>
                     <td>{{ $value->price }}</td>
                     <td>{{ $value->category }}</td>
                     <td>{{ $value->desc }}</td>
-                    <td><img src="{{asset('image/foods/')}}/{{$value->image}}" alt="" style="max-width:50px;"></td>
+                    <td class="text-center"><img src="{{asset('image/foods/')}}/{{$value->image}}" alt="" style="max-width:80px;"></td>
 
-                    <td>
+                    <td class="text-center">
                         <form action="{{ route('foods.delete',$value->id) }}" method="post">
                             <!-- show detail -->
-                            <a class="btn btn-small btn-success" href="{{route('foods.show',$value->id)}}">Show details</a>
+                            <a class="btn btn-small btn-success" href="{{route('foods.show',$value->id)}}">Show</a>
 
                             <!-- edit food -->
-                            <a class="btn btn-small btn-info" href="{{route('foods.edit',$value->id)}}">Edit this food</a>
+                            <a class="btn btn-small btn-info" href="{{route('foods.edit',$value->id)}}">Edit</a>
 
                             <!-- delete -->
                             @csrf

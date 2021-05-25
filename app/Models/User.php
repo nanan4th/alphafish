@@ -12,6 +12,8 @@ class User extends Authenticatable
 {
     use LaratrustUserTrait;
     use HasFactory, Notifiable;
+    protected $table = "users";
+    protected $primaryKey = "id";
 
     /**
      * The attributes that are mass assignable.
@@ -42,8 +44,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-    
-    public function book(){
-        return $this ->hasOne(order::class);
+
+    public function order()
+    {
+        return $this->hasMany(Order::class); 
     }
 }

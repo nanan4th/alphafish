@@ -37,10 +37,10 @@ class FoodController extends Controller
     {
         //
         $request->validate([
-            'name'=> 'required',
+            'name'=> 'required|string|max:255',
             'price'=>'required',
-            'category'=>'required',
-            'desc'=>'required',
+            'category'=>'required|string|max:255',
+            'desc'=>'required|string',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 

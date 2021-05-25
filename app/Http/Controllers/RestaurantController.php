@@ -39,9 +39,9 @@ class RestaurantController extends Controller
     {
         //
         $request->validate([
-            'name'=> 'required',
-            'address'=>'required',
-            'desc'=>'required',
+            'name'=> 'required|string|max:255',
+            'address'=>'required|string|max:255',
+            'desc'=>'required|string',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
@@ -124,5 +124,7 @@ class RestaurantController extends Controller
     public function destroy($id)
     {
         //
+        Restaurant::whereId($id)->delete();
+        return redirect()->route('restaurants.index')->with('success', 'Restaurants deleted successfully');
     }
 }

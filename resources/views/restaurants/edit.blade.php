@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Restaurant Section</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div class="container">
-
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{route('restaurants.index')}}">Restaurant Section</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li><a href="{{route('restaurants.index')}}">View Restaurants</a></li>
-                <li><a href="{{route('restaurants.create')}}">Add Restaurant</a>
-            </ul>
-        </nav>
+@include('restaurants.navigation')
 
         <h1>Edit a restaurant</h1>
-                
+
         @if ($errors->any())
         <div class="alert alert-danger">
             <strong>Whoops!</strong> There were some problems with your input.<br><br>

@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Models\User;
+use App\Http\Controllers\Auth;
+use Illuminate\Support\Facades\DB;
+
 class OrderController extends Controller
 {
     /**
@@ -25,6 +29,7 @@ class OrderController extends Controller
     public function create()
     {
         //
+        return view('booking');
     }
 
     /**
@@ -36,6 +41,17 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         //
+        $user=User::find($request->user()->id);
+        $request->validate([
+            'name'=> 'required|string|max:255',
+            'restaurant'=>'required|string|max:255',
+            'dates'=>'required',
+            'hour'=>'required|integer',
+            'numberOfPeople'=>'required|integer'
+        ]);
+        $input = $request->all();
+        $user->order()->create($input);
+        return redirect()->route('dashboard')->with('success', 'Food created successfully.');
     }
 
     /**
@@ -45,29 +61,6 @@ class OrderController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
     {
         //
     }
