@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Food Section</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+    <title>Alphafish</title>
 </head>
-
-<body>
-    <div class="container">
-
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">Alphafish</a>
+<body class="bg-light">
+    <nav class="py-3 navbar navbar-expand-lg navbar-light" style="background-color: #F3F4F6">
+        <div class="container">
+            <a class="navbar-brand" href="/">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="{{ URL::to('dashboard') }}">Dashboard</a>
+                    <a class="nav-link" href="{{ URL::to('foods') }}">Menu</a>
+                    <a class="nav-link" href="{{route('foods.create')}}">Add Menu</a>
+                </div>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="{{ URL::to('dashboard') }}">Dashboard</a></li>
-                <li><a href="{{ URL::to('foods') }}">Menu</a></li>
-                <li><a href="{{route('foods.create')}}">Add Food</a>
-            </ul>
-        </nav>
+        </div>
+    </nav>

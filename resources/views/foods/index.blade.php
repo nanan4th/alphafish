@@ -1,5 +1,5 @@
 @include('foods.navigation')
-
+    <div class="container">
         <h1>All the foods</h1>
 
         <!-- will be used to show any messages -->

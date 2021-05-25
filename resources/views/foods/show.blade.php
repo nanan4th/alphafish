@@ -1,6 +1,6 @@
 @include('foods.navigation')
 
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-12 margin-tb">
                 <div class="pull-left">
                     <h2> Show food</h2>
@@ -44,8 +44,31 @@
                     <img src="{{asset('image/foods/')}}/{{$foods->image}}" width="500px" alt="">
                 </div>
             </div>
-        </div>
+        </div> --}}
 
+    {{-- <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="rounded" src="{{asset('image/foods/')}}/{{$foods->image}}" width="100%" alt="">
+            </div>
+            <div class="col-md-8">
+                <h3>{{ $foods->name }}</h3>
+                <h5>{{ $foods->price }}</h5>
+                <h5>{{ $foods->category }}</h5>
+                <p>{{ $foods->desc }}</p>
+            </div>
+        </div>
+    </div> --}}
+
+    <div class="card mx-auto d-block my-3" style="width: 40%;">
+        <img src="{{asset('image/foods/')}}/{{$foods->image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 class="card-title">{{ $foods->name }}</h2>
+            <p>Rp. {{ $foods->price }}</p>
+            <p>{{ $foods->category }}</p>
+            <p>{{ $foods->desc }}</p>
+            <a class="btn btn-primary px-4" href="{{ route('foods.index') }}"> Back</a>
+        </div>
     </div>
 </body>
 

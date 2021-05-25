@@ -1,5 +1,5 @@
 @include('foods.navigation')
-
+    <div class="container">
         <h1>Edit a food</h1>
 
         @if ($errors->any())
@@ -46,7 +46,6 @@
             </div>
 
         </form>
-
     </div>
 </body>
 
