@@ -18,8 +18,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="/">Home</a>
-                    <a class="nav-link" href="#">Explore</a>
-                    <a class="nav-link" href="#">Booking</a>
+                    <a class="nav-link" href="/explore">Explore</a>
+                    <a class="nav-link" href="/orders/create">Booking</a>
                     <a href="/login">
                         <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">Masuk</button>
                     </a>

@@ -1,26 +1,31 @@
-<!DOCTYPE html>
-<html>
+@include('header')
 
-<head>
-    <title>Restaurant Section</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div class="container">
-
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="">Alphafish</a>
+<div class="container">
+    <section id="restaurant" class="p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <figure>
+                    <img src="https://via.placeholder.com/250" alt="Trulli" style="width:100%" class="mb-3">
+                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                </figure>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Restaurants</a></li>
-                <li><a href="#">Add Restaurant</a>
-            </ul>
-        </nav>
-
-        <h1>Booking</h1>
+            <div class="col-md-4">
+                <figure>
+                    <img src="https://via.placeholder.com/250" alt="Trulli" style="width:100%" class="mb-3">
+                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4">
+                <figure>
+                    <img src="https://via.placeholder.com/250" alt="Trulli" style="width:100%" class="mb-3">
+                    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="booking">
+        <h1 class="text-center mb-5">Booking</h1>
 
         @if ($errors->any())
         <div class="alert alert-danger">
@@ -35,29 +40,39 @@
         <form action="{{route('orders.store')}}" method="post">
             @csrf
 
-            <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name">
+            <div class="row mb-3">
+                <label for="nama" class="col-sm-3 col-form-label col-form-label-sm">Nama</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nama" placeholder="Masukan nama" name="nama">
+                </div>
             </div>
 
-            <div class="form-group">
-                <strong>Restaurant:</strong>
-                <input type="text" name="restaurant" class="form-control" placeholder="Restaurant">
+            <div class="row mb-3">
+                <label for="restaurant" class="col-sm-3 col-form-label col-form-label-sm">Restaurant</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="restaurant" placeholder="Masukan nama restaurant" name="restaurant">
+                </div>
             </div>
 
-            <div class="form-group">
-                <strong>Dates:</strong>
-                <input type="date" name="dates" class="form-control">
+            <div class="row mb-3">
+                <label for="date" class="col-sm-3 col-form-label col-form-label-sm">Tanggal</label>
+                <div class="col-sm-9">
+                    <input type="date" class="form-control" id="date" name="date">
+                </div>
             </div>
 
-            <div class="form-group">
-                <strong>Hour:</strong>
-                <input type="number" name="hour" class="form-control" placeholder="Hour">
+            <div class="row mb-3">
+                <label for="hour" class="col-sm-3 col-form-label col-form-label-sm">Waktu</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="hour" placeholder="Masukan waktu pesanan" name="hour">
+                </div>
             </div>
 
-            <div class="form-group">
-                <strong>Number of People:</strong>
-                <input type="number" name="numberOfPeople" class="form-control" placeholder="Number of People">
+            <div class="row mb-3">
+                <label for="numberOfPeople" class="col-sm-3 col-form-label col-form-label-sm">Jumlah Orang</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="numberOfPeople" placeholder="Masukan jumlah orang" name="numberOfPeople">
+                </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
@@ -65,8 +80,8 @@
             </div>
 
         </form>
+    </section>
 
-    </div>
-</body>
+</div>
 
-</html>
+@include('footer')

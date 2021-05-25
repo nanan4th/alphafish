@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/explore', function () {
+    return view('explore');
+});
+
 /*Default Route
     Route::get('/dashboard', function () {
         return view('dashboard');
