@@ -1,6 +1,6 @@
 @include('restaurants.navigation')
-
-        <h1>All the restaurants</h1>
+<div class="container">
+    <h1>All the restaurants</h1>
 
         <!-- will be used to show any messages -->
         @if (Session::has('success'))
@@ -50,6 +50,6 @@
             </tbody>
         </table>
         {{$restaurants->render()}}
-    </div>
+</div>
 </body>
 </html>
