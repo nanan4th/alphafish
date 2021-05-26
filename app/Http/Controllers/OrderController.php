@@ -54,17 +54,17 @@ class OrderController extends Controller
         return redirect()->route('dashboard')->with('success', 'Food created successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public function showAll()
     {
         //
+        $orders = Order::latest()->paginate(5);
+        return view('orders.index', compact('orders'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
+    // public function showById($id)
+    // {
+    //     //
+    // }
     /**
      * Remove the specified resource from storage.
      *
@@ -74,5 +74,7 @@ class OrderController extends Controller
     public function destroy($id)
     {
         //
+        Order::whereId($id)->delete();
+        return redirect()->route('orders.index')->with('success', 'Food deleted successfully');
     }
 }

@@ -20,9 +20,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/explore', function () {
-    return view('explore');
-});
+
+/*Default Route
+ Route::get('/explore', function () {
+     return view('explore');
+ }); 
+ */
+Route::get('/explore', 'App\Http\Controllers\DashboardController@menu')->name('explore');
 
 /*Default Route
     Route::get('/dashboard', function () {

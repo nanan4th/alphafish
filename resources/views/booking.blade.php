@@ -43,7 +43,7 @@
             <div class="row mb-3">
                 <label for="nama" class="col-sm-3 col-form-label col-form-label-sm">Nama</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" id="nama" placeholder="Masukan nama" name="nama">
+                    <input type="text" class="form-control" id="name" placeholder="Masukan nama" name="name">
                 </div>
             </div>
 
@@ -57,7 +57,7 @@
             <div class="row mb-3">
                 <label for="date" class="col-sm-3 col-form-label col-form-label-sm">Tanggal</label>
                 <div class="col-sm-9">
-                    <input type="date" class="form-control" id="date" name="date">
+                    <input type="date" class="form-control" id="dates" name="dates">
                 </div>
             </div>
 
