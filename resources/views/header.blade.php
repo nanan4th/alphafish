@@ -11,7 +11,9 @@
 <body class="bg-light">
     <nav class="py-3 navbar navbar-expand-lg navbar-light" style="background-color: #F3F4F6">
         <div class="container">
-            <a class="navbar-brand" href="/">Logo</a>
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('image/logo/navbar-logo.png') }}" alt="" style="height: 52px">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
