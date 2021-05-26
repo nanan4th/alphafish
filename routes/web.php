@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RestaurantController;
@@ -22,9 +22,9 @@ Route::get('/', function () {
 
 
 /*Default Route
- Route::get('/explore', function () {
-     return view('explore');
- }); 
+Route::get('/explore', function () {
+    return view('explore');
+}); 
  */
 Route::get('/explore', 'App\Http\Controllers\DashboardController@menu')->name('explore');
 
@@ -69,4 +69,11 @@ Route::group(['middleware' => ['auth', 'role:admin']], function () {
 Route::group(['middleware' => ['auth', 'role:user']], function () {
     Route::get('/orders/create', [OrderController::class, 'create'])->name('orders.create');
     Route::post('/orders/store', [OrderController::class, 'store'])->name('orders.store');
+});
+
+//route logout
+Route::get('logout', function()
+{
+    Auth::logout();
+    return redirect('/');
 });

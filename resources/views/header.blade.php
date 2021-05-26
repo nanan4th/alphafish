@@ -22,12 +22,23 @@
                     <a class="nav-link" href="/">Home</a>
                     <a class="nav-link" href="/explore">Explore</a>
                     <a class="nav-link" href="/orders/create">Booking</a>
-                    <a href="/login">
-                        <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">Masuk</button>
-                    </a>
-                    <a href="/register">
-                        <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">Daftar</button>
-                    </a>
+                    @if (Auth::user())
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ Auth::user()->name }}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="{{url('logout')}}">Logout</a></li>
+                            </ul>
+                        </div>
+                    @else
+                        <a href="/login">
+                            <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">Masuk</button>
+                        </a>
+                        <a href="/register">
+                            <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">Daftar</button>
+                        </a>
+                    @endif
                 </div>
             </div>
         </div>

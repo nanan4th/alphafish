@@ -84,17 +84,17 @@
     <section id="ulasan">
         <h2 class="text-center my-5">Review</h2>
         <div class="row">
-            <div class="col text-center">
+            <div class="col-md-4 text-center">
                 <img class="mb-3 rounded-circle mx-auto d-block" src="{{ asset('image/review/man_1.png') }}" alt="">
                 <h3>Farid Syauqi</h3>
                 <p>It’s a great experience. The ambiance is very welcoming and charming. Amazing food and service. Staff are extremely knowledgeable and make great recommendations</p>
             </div>
-            <div class="col text-center">
+            <div class="col-md-4 text-center">
                 <img class="mb-3 rounded-circle mx-auto d-block" src="{{ asset('image/review/woman_1.png') }}" alt="">
                 <h3>Khadija</h3>
                 <p>This is my absolute favorite seafood restaurant. The food is always fantastic and no matter what I order I am always delighted with my meal!</p>
             </div>
-            <div class="col text-center">
+            <div class="col-md-4 text-center">
                 <img class="mb-3 rounded-circle mx-auto d-block" src="{{ asset('image/review/man_2.png') }}" alt="">
                 <h3>Alex Basiman</h3>
                 <p>The menu is extensive and seasonal to a particularly high standard. Definitely the best seafood restaurant</p>
