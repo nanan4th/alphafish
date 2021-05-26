@@ -1,5 +1,5 @@
 @include('header')
-<img src="https://via.placeholder.com/1200x300" alt="" width="100%">
+<img src="{{ asset('image/hero-image.jpg') }}" alt="" width="100%">
 
 <div class="container">
     <section id="menu">
@@ -11,7 +11,8 @@
                 <div class="card" style="width: 100%;">
                     <img src="{{asset('image/foods/')}}/{{$value->image}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{ $value->name }}</h5>
+                        <h3 class="card-title">{{ $value->name }}</h3>
+                        <p class="card-text">Rp. {{ $value->price }}</p>
                         <p class="card-text">{{ $value->desc }}</p>
                     </div>
                 </div>

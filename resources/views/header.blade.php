@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
     <title>Alphafish</title>
 </head>
-<body class="bg-light">
+<body class="">
     <nav class="py-3 navbar navbar-expand-lg navbar-light" style="background-color: #F3F4F6">
         <div class="container">
             <a class="navbar-brand" href="/">
