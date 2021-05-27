@@ -7,12 +7,10 @@
         <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
         </div>
         <div class="col-lg-3 col-xs-12 links">
-        <h4 class="mt-lg-0 mt-sm-3">Info</h4>
+        <h4 class="mt-lg-0 mt-sm-3">Link</h4>
             <ul class="m-0 p-0">
-                <li>- (541) 754-3010 (Jakarta)</li>
-                <li>- (521) 457-1234 (Malang)</li>
-                <li>- (511) 351-1120 (Bogor)</li>
-                <li><p><i class="fa fa-envelope-o mr-3"></i>info@alphafish.com</p></li>
+                <li>- <a href="/">Home</a></li>
+                <li>- <a href="/about">About Us</a></li>
             </ul>
         </div>
         <div class="col-lg-4 col-xs-12 location">
@@ -21,6 +19,12 @@
             <li>Jalan Kyai Jalak komp dewa kembar blok b no 142 rt 007/01 kel Semper Timur kec Cilincing, Kota Jakarta Utara, DKI Jakarta</li>
             <li>Jalan Semanggi Timur Nomor 3, Jl. Soekarno Hatta, Kec. Lowokwaru, Kota Malang, Jawa Timur</li>
             <li>Jalan Kapten Harun Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat </li>
+        </ul>
+        <ul class="m-0 p-0">
+            <li>(541) 754-3010 (Jakarta)</li>
+            <li>(521) 457-1234 (Malang)</li>
+            <li>(511) 351-1120 (Bogor)</li>
+            <li><p><i class="fa fa-envelope-o mr-3"></i>info@alphafish.com</p></li>
         </ul>
         </div>
     </div>

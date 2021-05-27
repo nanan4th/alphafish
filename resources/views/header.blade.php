@@ -21,7 +21,17 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="/">Home</a>
                     <a class="nav-link" href="/explore">Explore</a>
-                    <a class="nav-link" href="/orders/create">Booking</a>
+                    @if(Auth::user())
+                        @if (Auth::user()->name == 'admin')
+                            <a class="nav-link" href="{{route('foods.index')}}">Foods</a>
+                            <a class="nav-link" href="{{route('foods.index')}}">Restaurant</a>
+                        @else
+                            <a class="nav-link" href="/orders/create">Booking</a>
+                        @endif
+                    @else
+                        <a class="nav-link" href="/orders/create">Booking</a>
+                    @endif
+                    
                     @if (Auth::user())
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

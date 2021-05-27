@@ -27,6 +27,9 @@ Route::get('/explore', function () {
 }); 
  */
 Route::get('/explore', 'App\Http\Controllers\DashboardController@menu')->name('explore');
+Route::get('/about', function(){
+    return view('about');
+});
 
 /*Default Route
     Route::get('/dashboard', function () {

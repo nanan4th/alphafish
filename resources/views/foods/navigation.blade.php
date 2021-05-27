@@ -11,13 +11,15 @@
 <body class="bg-light">
     <nav class="py-3 navbar navbar-expand-lg navbar-light" style="background-color: #F3F4F6">
         <div class="container">
-            <a class="navbar-brand" href="/">Logo</a>
+            <a class="navbar-brand" href="/">
+                <img src="{{ asset('image/logo/navbar-logo.png') }}" alt="" height="52px">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="{{ URL::to('dashboard') }}">Dashboard</a>
+                    <a class="nav-link" href="{{ URL::to('/') }}">Dashboard</a>
                     <a class="nav-link" href="{{ URL::to('foods') }}">Menu</a>
                     <a class="nav-link" href="{{route('foods.create')}}">Add Menu</a>
                 </div>
