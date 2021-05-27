@@ -11,7 +11,7 @@
                         <a href="#">
                         Taman Impian Jaya Ancol, Jalan Lodan timur No.7, Ancol, Kota Jkt Utara, Jakarta 14430
                         </a>
-                        <p>Alphafish North Jakarta is the most unique compared to other branches because it is located on the seafront.</p>
+                        <p style="text-align: justify">Alphafish North Jakarta is the most unique compared to other branches because it is located on the seafront.</p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <h3>Alphafish Malang</h3>
                         <a href="#">Jalan MT. Haryono No.7-5, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145</a>
-                        <p>The Malang's branch of Alphafish Restaurant is located near Brawijaya University and is often a student gathering place.</p>
+                        <p style="text-align: justify">The Malang's branch of Alphafish Restaurant is located near Brawijaya University and is often a student gathering place.</p>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     <div class="card-body">
                         <h3>Alphafish Bogor</h3>
                         <a href="#">Jalan Kapten Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat 12130</a>
-                        <p>This restaurant is located in Puncak, Cisarua Bogor and this Alphafish branch has fresh air because it is located in a mountainous area.</p>
+                        <p style="text-align: justify">This restaurant is located in Puncak, Cisarua Bogor and this Alphafish branch has fresh air because it is located in a mountainous area.</p>
                     </div>
                 </div>
             </div>

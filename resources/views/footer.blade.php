@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-5 col-xs-12 about-company">
         <h2>Alpha Web</h2>
-        <p class="pr-5 text-white-50">Alphaweb is a web development group that works independently and was formed in 2010. Alphaweb was formed by a group of people who are computer students and domiciled in North Jakarta.</p>
+        <p class="pe-5 text-white-50" style="text-align: justify">Alphaweb is a web development group that works independently and was formed in 2010. Alphaweb was formed by a group of people who are computer students and domiciled in North Jakarta.</p>
         <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
         </div>
         <div class="col-lg-3 col-xs-12 links">

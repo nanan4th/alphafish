@@ -8,8 +8,7 @@
         <div class="row px-5">
         @foreach($foods as $key => $value)
             <div class="col-md-4 mb-3">
-
-                <div class="card" style="width: 100%;">
+                <div class="card" style="width: 100%; height:450px">
                     <img src="{{asset('image/foods/')}}/{{$value->image}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3 class="card-title">{{ $value->name }}</h3>

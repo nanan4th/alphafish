@@ -19,7 +19,7 @@ class DashboardController extends Controller
     }
 
     public function menu(){
-        $foods = Food::latest()->paginate(12);
+        $foods = Food::latest()->paginate(3);
         return view('explore', compact('foods'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 }

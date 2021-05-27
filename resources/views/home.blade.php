@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col m7">
                 <h1>Why Alphafish?</h1>
-                <p>Alphafish is the best seafood restaurant in North Jakarta that has a specialty in crispy fish and paste. We make our foods with the freshest ingredient that we take it straight from the North Jakarta beach.</p>
+                <p style="text-align: justify">Alphafish is the best seafood restaurant in North Jakarta that has a specialty in crispy fish and paste. We make our foods with the freshest ingredient that we take it straight from the North Jakarta beach.</p>
                 <a href="/about">
                     <button type="button" class="mx-1 px-4 btn btn btn-outline-dark rounded-pill">More Info</button>
                 </a>
