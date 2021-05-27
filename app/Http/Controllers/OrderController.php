@@ -51,7 +51,7 @@ class OrderController extends Controller
         ]);
         $input = $request->all();
         $user->order()->create($input);
-        return redirect()->route('dashboard')->with('success', 'Food created successfully.');
+        return redirect('/');
     }
 
     public function showAll()

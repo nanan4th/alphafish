@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\RestaurantController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,25 +21,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-
-/*Default Route
-Route::get('/explore', function () {
-    return view('explore');
-}); 
- */
-Route::get('/explore', 'App\Http\Controllers\DashboardController@menu')->name('explore');
+Route::get('/explore', [DashboardController::class,'menu'])->name('explore');
 Route::get('/about', function(){
     return view('about');
-});
-
-/*Default Route
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->middleware(['auth'])->name('dashboard');
-*/
-
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
 });
 
 require __DIR__ . '/auth.php';

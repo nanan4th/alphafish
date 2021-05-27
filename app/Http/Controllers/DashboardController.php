@@ -9,17 +9,8 @@ use App\Models\Restaurant;
 use App\Models\Food;
 class DashboardController extends Controller
 {
-    public function index()
-    {
-        if (Auth::user()->hasRole('admin')) {
-            return view('dashboard');
-        } elseif (Auth::user()->hasRole('user')) {
-            return view('userdash');
-        }
-    }
-
     public function menu(){
-        $foods = Food::latest()->paginate(3);
-        return view('explore', compact('foods'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $foods = Food::orderBy('id','asc')->paginate(9);
+        return view('explore', compact('foods'))->with('i', (request()->input('page', 1) - 1) * 9);
     }
 }
