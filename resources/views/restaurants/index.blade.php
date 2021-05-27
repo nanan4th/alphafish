@@ -19,7 +19,7 @@
                     <th class="text-center">Address</th>
                     <th class="text-center">Description</th>
                     <th class="text-center">Image</th>
-                    <th width="280px">Action</th>
+                    <th class="text-center" width="280px">Action</th>
                 </tr>
             </thead>
             <tbody>

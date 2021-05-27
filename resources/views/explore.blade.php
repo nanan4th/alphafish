@@ -6,8 +6,9 @@
         <h2 class="text-center my-5">Menu</h2>
 
         <div class="row px-5">
+        @foreach($foods as $key => $value)
             <div class="col-md-4 mb-3">
-                @foreach($foods as $key => $value)
+
                 <div class="card" style="width: 100%;">
                     <img src="{{asset('image/foods/')}}/{{$value->image}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -16,8 +17,8 @@
                         <p class="card-text">{{ $value->desc }}</p>
                     </div>
                 </div>
-                @endforeach
             </div>
+        @endforeach
         </div>
         {{$foods->render()}}
     </section>

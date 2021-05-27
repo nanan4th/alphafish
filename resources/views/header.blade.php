@@ -23,8 +23,8 @@
                     <a class="nav-link" href="/explore">Explore</a>
                     @if(Auth::user())
                         @if (Auth::user()->name == 'admin')
-                            <a class="nav-link" href="{{route('foods.index')}}">Foods</a>
-                            <a class="nav-link" href="{{route('foods.index')}}">Restaurant</a>
+                            <a class="nav-link" href="{{route('foods.index')}}">Menu</a>
+                            <a class="nav-link" href="{{route('restaurants.index')}}">Restaurants</a>
                         @else
                             <a class="nav-link" href="/orders/create">Booking</a>
                         @endif

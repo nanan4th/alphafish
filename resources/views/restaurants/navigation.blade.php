@@ -19,8 +19,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="{{ URL::to('/') }}">Dashboard</a>
-                    <a class="nav-link" href="{{ URL::to('restaurants') }}">Restaurant</a>
+                    <a class="nav-link" href="{{ URL::to('/') }}">Home</a>
+                    <a class="nav-link" href="{{ URL::to('restaurants') }}">Restaurants</a>
                     <a class="nav-link" href="{{route('restaurants.create')}}">Add Restaurant</a>
                 </div>
             </div>

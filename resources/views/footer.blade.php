@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-lg-5 col-xs-12 about-company">
         <h2>Alpha Web</h2>
-        <p class="pr-5 text-white-50">Kita adalah ultraman</p>
+        <p class="pr-5 text-white-50">Alphaweb is a web development group that works independently and was formed in 2010. Alphaweb was formed by a group of people who are computer students and domiciled in North Jakarta.</p>
         <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
         </div>
         <div class="col-lg-3 col-xs-12 links">
@@ -14,23 +14,17 @@
             </ul>
         </div>
         <div class="col-lg-4 col-xs-12 location">
-        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <h4 class="mt-lg-0 mt-sm-4">Branches</h4>
         <ul class="m-0 p-0">
-            <li>Jalan Kyai Jalak komp dewa kembar blok b no 142 rt 007/01 kel Semper Timur kec Cilincing, Kota Jakarta Utara, DKI Jakarta</li>
-            <li>Jalan Semanggi Timur Nomor 3, Jl. Soekarno Hatta, Kec. Lowokwaru, Kota Malang, Jawa Timur</li>
-            <li>Jalan Kapten Harun Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat </li>
-        </ul>
-        <ul class="m-0 p-0">
-            <li>(541) 754-3010 (Jakarta)</li>
-            <li>(521) 457-1234 (Malang)</li>
-            <li>(511) 351-1120 (Bogor)</li>
-            <li><p><i class="fa fa-envelope-o mr-3"></i>info@alphafish.com</p></li>
+            <li>Taman Impian Jaya Ancol, Jalan Lodan timur No.7, Ancol, Kota Jkt Utara, Jakarta 14430 - (541) 754-3010 (Jakarta)</li>
+            <li>Jalan MT. Haryono No.7-5, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145 - (521) 457-1234 (Malang)</li>
+            <li>Jalan Kapten Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat 12130 - (511) 351-1120 (Bogor)</li>
         </ul>
         </div>
     </div>
     <div class="row mt-5">
         <div class="col copyright">
-        <p class=""><small class="text-white-50">© 2019. All Rights Reserved. | Designed by Alpha Web Team</small></p>
+        <p class=""><small class="text-white-50">© 2021. All Rights Reserved. | Designed by Alpha Web Team</small></p>
         </div>
     </div>
     </div>

@@ -7,11 +7,11 @@
                 <div class="card" style="width: 100%;">
                     <img src="{{asset('image/dummy_resto/resto_1.jpeg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h3>Alphafish Jakarta Utara</h3>
+                        <h3>Alphafish North Jakarta</h3>
                         <a href="#">
-                            Jalan Kyai Jalak komp dewa kembar blok b no 142 rt 007/01 kel Semper Timur kec Cilincing, Kota Jakarta Utara, DKI Jakarta
+                        Taman Impian Jaya Ancol, Jalan Lodan timur No.7, Ancol, Kota Jkt Utara, Jakarta 14430
                         </a>
-                        <p>Ini adalah restoran alphafish yang terletak di Jakarta utara dan paling unik dibanding cabang lain karena berada di pinggir laut</p>
+                        <p>Alphafish North Jakarta is the most unique compared to other branches because it is located on the seafront.</p>
                     </div>
                 </div>
             </div>
@@ -20,8 +20,8 @@
                     <img src="{{asset('image/dummy_resto/resto_2.jpeg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3>Alphafish Malang</h3>
-                        <a href="#">alan Semanggi Timur Nomor 3, Jl. Soekarno Hatta, Kec. Lowokwaru, Kota Malang, Jawa Timur</a>
-                        <p>Restoran Alphafish cabang Malang terletak di dekat Universitas Brawijaya dan sering menjadi tempat berkumpul mahasiswa</p>
+                        <a href="#">Jalan MT. Haryono No.7-5, Dinoyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65145</a>
+                        <p>The Malang's branch of Alphafish Restaurant is located near Brawijaya University and is often a student gathering place.</p>
                     </div>
                 </div>
             </div>
@@ -30,8 +30,8 @@
                     <img src="{{asset('image/dummy_resto/resto_3.jpeg')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h3>Alphafish Bogor</h3>
-                        <a href="#">Jalan Kapten Harun Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat </a>
-                        <p>Restoran ini berada di puncak Cisarua Bogor dan Alphafish cabang ini memiliki udara yang segar karena terletak di daerah pegunungan</p>
+                        <a href="#">Jalan Kapten Kabir No.724, Cibeureum, Kec. Cisarua, Bogor, Jawa Barat 12130</a>
+                        <p>This restaurant is located in Puncak, Cisarua Bogor and this Alphafish branch has fresh air because it is located in a mountainous area.</p>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
                 <h2 class="card-title">{{ $restaurants->name }}</h2>
                 <p>{{ $restaurants->address }}</p>
                 <p>{{ $restaurants->desc }}</p>
-                <a class="btn btn-primary px-4" href="{{ route('foods.index') }}"> Back</a>
+                <a class="btn btn-primary px-4" href="{{ route('restaurants.index') }}"> Back</a>
             </div>
         </div>
     </div>

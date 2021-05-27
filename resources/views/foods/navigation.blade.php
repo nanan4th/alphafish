@@ -19,7 +19,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="{{ URL::to('/') }}">Dashboard</a>
+                    <a class="nav-link" href="{{ URL::to('/') }}">Home</a>
                     <a class="nav-link" href="{{ URL::to('foods') }}">Menu</a>
                     <a class="nav-link" href="{{route('foods.create')}}">Add Menu</a>
                 </div>
